@@ -16,11 +16,7 @@ def create_entries():
     entries = ENTRYCLASS.create_entry(details)
     return jsonify({'entries': entries})
 
-@app.route('/api/v1/entry')
-def world():
-    return 'Hey'
-
-@app.route('/api/v1/entries/<int:id>', methods=['GET'])
+@app.route('/api/v1/entry/<int:id>', methods=['GET'])
 def get_single_entry(id):
     single_entry = ENTRYCLASS.single_entry(id)
     return jsonify({'entry': single_entry})

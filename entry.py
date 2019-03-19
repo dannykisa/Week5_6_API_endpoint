@@ -1,6 +1,6 @@
 class Entry:
     def __init__(self):
-        self.entries = [{'id': 1, 'entry_name': 'name of the entry', 'anything': 'something'}, {'id': 2, 'entry_name': 'name of the entry', 'anything': 'something'}]
+        self.entries = [{'id': 1, 'staff_name': 'winnie', 'department': 'audit'}, {'id': 2, 'staff_name': 'kisa', 'department': 'systems'}]
 
     def all_entries(self):
         return self.entries
@@ -15,4 +15,4 @@ class Entry:
         if entry:
             self.entries.append(entry)
             return self.entries
-        return 'entry not provided'
+        return 'entry not given'
